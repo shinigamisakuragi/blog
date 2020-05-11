@@ -7,7 +7,7 @@ Vue.use(VueRouter)
 const routes = pages
 
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   routes
 })
 
