@@ -19,6 +19,18 @@ export default [
         ]
     },
     {
+        path: '/env',
+        name: '开发环境',
+        component: Page,
+        children: [
+            {
+                path: 'mac-develop-env',
+                name: 'MacOS部署开发环境',
+                component: () => import('../views/env/mac-develop-env.vue')
+            }
+        ]
+    },
+    {
         path: '/js',
         name: 'JavaScript',
         component: Page,
@@ -40,16 +52,15 @@ export default [
             },
         ]
     },
-    {
-        path: '/php',
-        name: 'PHP',
-        component: Page,
-        children: [
-            {
-                path: 'php',
-                name: 'php',
-                component: () => import('../views/js/async-await.vue')
-            },
-        ]
-    }
+    // {
+    //     path: '/php',
+    //     name: 'PHP',
+    //     component: Page,
+    //     children: [
+    //         {
+    //             path: 'php',
+    //             name: 'php',
+    //         },
+    //     ]
+    // }
 ]

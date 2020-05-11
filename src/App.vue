@@ -123,6 +123,13 @@
         word-wrap: break-word;
     }
 
+    code {
+        border-radius: 8px;
+        padding: 8px;
+        color: #fff;
+        background: #212529;
+    }
+
     p small {
         color: #ddd;
     }
